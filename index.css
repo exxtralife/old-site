@@ -1,0 +1,66 @@
+
+body
+{
+    background-size: cover;
+    background-position: center top;
+    background-image: url("assets/Background/logo-background.png");
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px dotted #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-justify: left;
+    justify-self: center;
+}
+
+.container img
+{ 
+    padding-bottom: 10px;
+    width: 300px;
+    justify-self: center;
+}
+
+.container button
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    border-radius: 12px;
+
+    border: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 50%;
+    justify-self: center;
+}
+.container button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+
+  #loginForm {
+    display: grid;
+    place-content: center;
+    padding: 16px;
+    height: 100%;
+    justify-self: center;
+    justify-items: center;
+  }
+
+  #src
+  {
+    top:200px;
+    right:50%;
+  }

@@ -1,0 +1,56 @@
+
+#src
+{
+    position: absolute;
+    top:20%;
+    right: 40%;
+}
+
+#content
+{
+    position: absolute;
+    top:20%;
+    right: 2;
+}
+
+#news
+{
+    position: absolute;
+    top:40%;
+    right: 2%;
+}
+
+#poster
+{
+    position: absolute;
+    top:20%;
+    right: 90%;
+}
+
+#faeble
+{
+    position: absolute;
+    top:40%;
+    right: 90%;
+}
+
+#mabu
+{
+    position: absolute;
+    top:55%;
+    right: 90%;
+}
+
+#szeth
+{
+    position: absolute;
+    top:45%;
+    right: 75%;
+}
+
+#ubi
+{
+    position: absolute;
+    top:65%;
+    right: 75%;
+} 

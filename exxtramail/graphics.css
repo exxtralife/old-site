@@ -1,0 +1,58 @@
+
+#page
+{    
+    z-index:0;
+    position: absolute;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.aspect
+{
+   display: flex;
+}
+
+#redticket
+{
+    width: 100%;
+    height: 55%;
+    position: relative;    
+    transform: scale(1);
+    aspect-ratio: 3/1;
+    align-self: center;
+    justify-self: center;
+    padding-left: 2vw;
+}
+
+#ticketLeft
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+#rail
+{
+    padding-left: 13%;
+}
+
+.ttag
+{
+    position: absolute;
+    z-index:10;
+}
+
+video
+{
+    object-fit: cover;
+
+    z-index:5
+}
+
+#leftvid
+{
+    float: left;
+    object-fit: cover;
+}
+

@@ -1,0 +1,181 @@
+
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="desktop-style.css" >
+        <link rel="stylesheet" href="folder-style.css" >
+        <link rel="stylesheet" href="news-style.css" >
+
+
+    </head>
+
+    <div class = "desktop">
+
+        <div class = "workspace">
+
+            <div class = "draggable" id="news">
+                <div class = "tower">
+                    <div class = "bartopper"><b>News @ET</b></div>
+
+                    <div class = "news">
+                        <b>“I'm the only one left”</b> - says writer at CNN after all major news networks have been replaced with the trademark PICUS super intelligence known as “Christopher”.
+                    </div>
+                    <div class = "news"><b>Ariana Grande spills her drink at the airport</b> - witness described it as "ironic"</div>
+                    <div class = "news"><b>Eden Industries continue with complete government takeover</b> - "We have your best interests at heart", says the multi billion pound weapon manufacturer</div>
+                    <div class = "news"><b>Government bans vanity projects of past and present</b> - First step involves dissolving government</div>
+                    <div class = "news"><b>Citizens confused at new census</b> - Confusion has arose from a particularly odd question on the new census. "Why does big government care if I've had a rhinoplasty?" one voter complains.</div>
+                    <div class = "news"><b>EdenTerrestrial sign new landmark government contract</b> - They have been hired to take care of "business", soruces are unsure of what this means...</div>
+                    <div class = "news"><b>“This bitch ain't got no vision, we rich as fuck just living” </b> - Carti speaks on scrapping his new album, maybe one day he will speak on his numerous assault charges </div>
+                    <div class = "news"><b>US Finally cut ties with Israel</b> - Reports say this is after, Biden found the Israeli PM "quite annoying" at a recent White House dinner</div>
+                    <div class = "news"><b>The crown killer escapes</b> - Should we be alarmed? </div>
+                    <div class = "news"><b>Beyonce releases a shocking new perfume</b> - Labled to contain "children's blood", fans cannot tell if she's just "going with the bit"</div>
+                    <div class = "news"><b>Beyonce snubbed for country music award</b> - The writers room stands with her in solidarity</div>
+
+                </div>
+            </div>
+
+            <div class = "draggable" id="content">
+                <button onclick = "contentsClick()">
+
+                    <div class = "folder"><img draggable="false" src= "assets/folder-icon.png">content</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="poster">
+                <button onclick = "posterClick()">
+
+                    <div class = "folder"><img draggable="false" width="96" src= "product/bandage.png">archive</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="src">
+                <button onclick = "srcClick()">
+
+                    <div class = "folder"><img draggable="false" src= "assets/folder-icon.png">src</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="product">
+                <button onclick = "productClick()">
+                    <div class = "folder"><img draggable="false" src= "assets/folder-icon.png">product</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="faeble">
+                <button onclick = "faebleClick()">
+                    <div class = "folder"><img draggable="false" width="96" src= "assets/faeble-bicstan/icon.png">faeble.txt</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="mabu">
+                <button onclick = "mabuClick()">
+                    <div class = "folder"><img draggable="false" width="96" src= "assets/mabu/m-icon.png">mabu.txt</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="szeth">
+                <button onclick = "szethClick()">
+                    <div class = "folder"><img draggable="false" width="96" src= "assets/szeth/icon.png">szeth.txt</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="ubi">
+                <button onclick = "ubiClick()">
+                    <div class = "folder"><img draggable="false" width="96" src= "assets/ubi/icon.png">ubi.txt</div>
+                </button>
+            </div>
+
+        </div>
+
+        
+        <div class = "taskbar"> 
+
+            <div class = "status">
+                <span id="currentTime">
+                ra.co/events/2049372
+            </div>
+
+        </div>
+    </div>
+</html>
+
+
+<script>
+    function getTheTime() 
+    {
+        const now = new Date();
+        const currentDateTime = now.toLocaleTimeString();
+        document.querySelector('#currentTime').textContent = currentDateTime;
+    }
+    
+    setInterval(getTheTime, 1000);
+
+    const draggableElements = document.querySelectorAll('.draggable');
+
+    draggableElements.forEach(draggableElement => {
+    draggableElement.addEventListener('mousedown', (event) => {
+    const offsetX = event.clientX - draggableElement.offsetLeft;
+    const offsetY = event.clientY - draggableElement.offsetTop;
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+
+    function onMouseMove(event) {
+      draggableElement.style.left = (event.clientX - offsetX) + 'px';
+      draggableElement.style.top = (event.clientY - offsetY) + 'px';
+    }
+
+    function onMouseUp() {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseUp);   
+
+    }
+    
+  });
+});
+
+function srcClick()
+{
+    window.location.href = 'https://drive.google.com/drive/folders/1N6sN7H4FYENE0yxxc1gXDB7vRQ2apiq7?usp=sharing';
+}
+
+function contentsClick()
+{
+    window.location.href = 'https://drive.google.com/drive/folders/16lsUZgJXRt71MVaRtFAYDbvCfKWu-ysB?usp=sharing';
+}
+
+function posterClick()
+{
+    window.location.href = 'product/exxtralife-three.html';
+}
+
+function faebleClick()
+{
+    window.location.href = 'setlists/faeble.txt';
+}
+
+
+function mabuClick()
+{
+    window.location.href = 'setlists/mabu.txt';
+}
+
+
+function szethClick()
+{
+    window.location.href = 'setlists/szeth.txt';
+}
+
+function ubiClick()
+{
+    window.location.href = 'setlists/ubi.txt';
+}
+
+function productClick()
+{
+    window.location.href = 'https://github.com/exxtralife/exxtralife.github.io/tree/main/Desktop/product';
+}
+    
+    
+</script>

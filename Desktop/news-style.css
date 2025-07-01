@@ -1,0 +1,94 @@
+
+
+
+.topper
+{
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    box-sizing: border-box;
+
+    padding-top: 15px;
+    padding-left: 25px;
+
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(205, 205, 205);
+    background-color: rgb(164, 164, 164);
+    justify-self: center;
+    width: 100%;
+    outline: black;
+    height: 50px;
+
+    color: white;
+}
+
+.bartopper
+{
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    box-sizing: border-box;
+
+    padding-top: 15px;
+    padding-left: 25px;
+
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(205, 205, 205);
+    justify-self: center;
+    text-align: left;
+    width: 100%;
+    outline: black;
+    height: 60px;
+
+    color: white;
+}
+
+
+.tower
+{
+    width: 300px;
+    height: 500px;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgb(191, 191, 191);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow-y: scroll;
+
+}
+
+
+.news
+{
+    font-size: smaller;
+    box-sizing: border-box;
+
+    word-wrap:break-word;
+    padding-top: 15px;
+    padding-left: 25px;
+
+    border-bottom: solid;
+    border-top: solid;
+
+    border-width: 1px;
+    border-color: rgb(205, 205, 205);
+    justify-self: center;
+    text-align: left;
+    width: 100%;
+    outline: black;
+
+    padding-bottom: 20px;
+
+    box-sizing: border-box;
+    padding-right: 25px;
+    color: white;
+}
